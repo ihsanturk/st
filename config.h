@@ -100,16 +100,15 @@ static const char *colorname[] = {
   "#b48ead", //"magenta",
   "#8fbcbb", //"green",
   "#eceff4", //"cyan",
-  "white",   //"white",
   [255] = 0,
   /* more colors can be added after 255 to use with DefaultXX */
-  "#242933", // background
+  "#131313", // background //old ones:#242933
   "#D8DEE9", // foreground
 };
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * background, foreground, cursor, reverse cursor
  */
 unsigned int defaultfg = 257; //was 7
 unsigned int defaultbg = 256; //was 0
