@@ -82,38 +82,36 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 2;
 
+/* gruvbox-dark colorscheme */
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  "#3b4252", //"black",
-  "#bf616a", //"red3",
-  "#a3be8c", //"green3",
-  "#ebcb8b", //"yellow3",
-  "#81a1c1", //"blue2",
-  "#b48ead", //"magenta3",
-  "#88c0d0", //"cyan3",
-  "#e5e9f0", //"gray90",
-  "#4c566a", //"gray50",
-  "#bf616a", //"red",
-  "#a3be8c", //"green",
-  "#ebcb8b", //"yellow",
-  "#81a1c1", //"#5c5cff",
-  "#b48ead", //"magenta",
-  "#8fbcbb", //"green",
-  "#eceff4", //"cyan",
-  [255] = 0,
-  /* more colors can be added after 255 to use with DefaultXX */
-  "#131313", // background //old ones:#242933
-  "#D8DEE9", // foreground
+	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#cc241d",
+	"#98971a",
+	"#d79921",
+	"#458588",
+	"#b16286",
+	"#689d6a",
+	"#a89984",
+	"#928374",
+	"#fb4934",
+	"#b8bb26",
+	"#fabd2f",
+	"#83a598",
+	"#d3869b",
+	"#8ec07c",
+	"#ebdbb2",
 };
 
 /*
  * Default colors (colorname index)
- * background, foreground, cursor, reverse cursor
+ * foreground, background, cursor
  */
-unsigned int defaultfg = 257; //was 7
-unsigned int defaultbg = 256; //was 0
-static unsigned int defaultcs = 15; //was256
-static unsigned int defaultrcs = 257; //was 257
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
